@@ -181,13 +181,6 @@ for x in frequency_list:
 
 
 
-#tokenize 1/4/18 
-import nltk 
-from nltk.stem import WordNetLemmatizer
-#iterate/index 
-twitter_tokens=nltk.word_tokenize(str_tweets) 
-type(twitter_tokens) #class list 
-text_x=twitter_tokens[1:100]
 
 
 
@@ -196,35 +189,6 @@ text_x=twitter_tokens[1:100]
 
 
 
-
-
-
-
-
-
-
-
-
-#e.j.1 (how many tokens word and punctuation are in the text)
-def example_one():
-    return len(nltk.word_tokenize(str_tweets))
-example_one()
-
-#e.j. 2 average tokens per sentence (tweet)? there is no structure?
-def preguntas(): 
-    return np.mean([len(nltk.word_tokenize(sent)) for sent in nltk.sent_tokenize(str_tweets)])
-preguntas()
-
-##e.j.3 most frequent parts of speech? 
-def parties():
-    from collections import Counter
-    import operator
-
-    return sorted(Counter([tag for token, tag in nltk.pos_tag(str_tweets)]).items(),key=operator.itemgetter(1))
-parties() 
-
-#e.j. 4
-word_tokenize(str_tweets)
 
 
 
