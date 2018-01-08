@@ -201,14 +201,6 @@ for x in frequency_list:
 
 
 
-#list to str source: https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
-str_text=''.join(str(e) for e in tweets_peach)
-type(str_text)
-
-###tokenize
-str_text1=str_text.lower()
-len(str_text1)
-
 
 
 
